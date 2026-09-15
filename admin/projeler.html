@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projeler · Yönetim Paneli | AKS Reklam &amp; Mimari</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14161B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF4A17'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="side">
+  <a class="side__logo" href="dashboard.html">
+    <span class="side__mark">A</span>
+    <span>
+      <strong>AKS</strong>
+      <small>Yönetim Paneli</small>
+    </span>
+  </a>
+
+  <div class="side__group">
+    <h6>Genel</h6>
+    <ul>
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 13h7V4H4v9zm0 7h7v-5H4v5zm9 0h7v-9h-7v9zm0-16v5h7V4h-7z"/></svg>
+        Kontrol Paneli
+      </a></li>
+      <li><a href="mesajlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 5l9 7 9-7"/></svg>
+        Mesajlar<span class="pill">2</span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>İçerik</h6>
+    <ul>
+      <li><a href="projeler.html" class="is-active" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3zM3 7V4h6v3"/></svg>
+        Projeler
+      </a></li>
+      <li><a href="hizmetler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/></svg>
+        Hizmetler
+      </a></li>
+      <li><a href="blog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>
+        Blog
+      </a></li>
+      <li><a href="sayfalar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v4h4"/></svg>
+        Sayfalar
+      </a></li>
+      <li><a href="medya.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6"/></svg>
+        Medya
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>Yapılandırma</h6>
+    <ul>
+      <li><a href="seo.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M11 4a7 7 0 107 7 7 7 0 00-7-7zM20 20l-4.5-4.5"/></svg>
+        SEO
+      </a></li>
+      <li><a href="ayarlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zM3 12h3m12 0h3M12 3v3m0 12v3"/></svg>
+        Ayarlar
+      </a></li>
+    </ul>
+  </div>
+
+  <div class="side__foot">
+    <a href="../index.html" target="_blank" rel="noopener">↗ Siteyi görüntüle</a>
+    <a href="index.html">→ Çıkış yap</a>
+  </div>
+</aside>
+<div class="main">
+<header class="topbar">
+  <button class="side-toggle" id="sideToggle" aria-label="Menüyü aç/kapat"><span></span><span></span><span></span></button>
+  <h1>Projeler</h1>
+  <div class="topbar__right">
+    <div class="search"><input type="search" placeholder="Panelde ara…" aria-label="Panelde ara"></div>
+    <div class="user"><span class="avatar">MY</span><span class="user__txt"><strong>Murat Y.</strong><small>Yönetici</small></span></div>
+  </div>
+</header>
+<div class="page-bar"><a class="btn btn--signal" href="proje-duzenle.html">+ Yeni Proje</a>
+    <input data-table-search="#projTable" type="search" placeholder="Proje ara…" aria-label="Proje ara"
+      style="padding:9px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:14px">
+    <select style="padding:9px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:14px">
+      <option>Tüm kategoriler</option>
+      <option>Tabela</option><option>Mağaza</option><option>Mimari Proje</option><option>Araç Giydirme</option><option>Fuar &amp; Stand</option>
+    </select>
+    <span style="margin-left:auto;color:var(--txt-dim);font-size:14px">9 kayıt</span></div>
+<div class="content">
+
+<section class="card">
+  <div class="card__head">
+    <h2>Proje listesi</h2>
+    <a href="#" data-demo-action="Dışa aktar">CSV olarak dışa aktar</a>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data" id="projTable">
+      <thead>
+        <tr>
+          <th style="width:40px"><input type="checkbox" data-check-all="#projTable" aria-label="Tümünü seç"></th>
+          <th style="width:76px">Görsel</th>
+          <th>Proje</th>
+          <th>Kategori</th>
+          <th>İşveren</th>
+          <th>Yıl</th>
+          <th>Durum</th>
+          <th style="text-align:right">İşlem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" aria-label="Lumen AVM Totem seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-lumen/120/90" alt=""></td>
+          <td><strong>Lumen AVM Totem</strong><br><small style="color:var(--txt-dim)">/projeler/lumen-avm-totem</small></td>
+          <td>Tabela</td>
+          <td>Lumen Gayrimenkul</td>
+          <td>2025</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Form Concept Mağaza seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-form/120/90" alt=""></td>
+          <td><strong>Form Concept Mağaza</strong><br><small style="color:var(--txt-dim)">/projeler/form-concept-magaza</small></td>
+          <td>Mağaza</td>
+          <td>Form Concept</td>
+          <td>2025</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Arter Ofis Katı seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-arter/120/90" alt=""></td>
+          <td><strong>Arter Ofis Katı</strong><br><small style="color:var(--txt-dim)">/projeler/arter-ofis-kati</small></td>
+          <td>Mimari Proje</td>
+          <td>Arter Yazılım</td>
+          <td>2024</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Nova Filo Giydirme seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-nova/120/90" alt=""></td>
+          <td><strong>Nova Filo Giydirme</strong><br><small style="color:var(--txt-dim)">/projeler/nova-filo-giydirme</small></td>
+          <td>Araç Giydirme</td>
+          <td>Nova Lojistik</td>
+          <td>2025</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Meta Fuar Standı seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-meta/120/90" alt=""></td>
+          <td><strong>Meta Fuar Standı</strong><br><small style="color:var(--txt-dim)">/projeler/meta-fuar-standi</small></td>
+          <td>Fuar &amp; Stand</td>
+          <td>Meta Makine</td>
+          <td>2024</td>
+          <td><span class="badge badge--draft">Taslak</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Kare Plaza Cephe seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-kare/120/90" alt=""></td>
+          <td><strong>Kare Plaza Cephe</strong><br><small style="color:var(--txt-dim)">/projeler/kare-cephe-giydirme</small></td>
+          <td>Tabela</td>
+          <td>Kare İnşaat</td>
+          <td>2024</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Hane Kafe seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-hane/120/90" alt=""></td>
+          <td><strong>Hane Kafe</strong><br><small style="color:var(--txt-dim)">/projeler/hane-kafe</small></td>
+          <td>Mağaza</td>
+          <td>Hane Kahve</td>
+          <td>2025</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Terra Showroom seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-terra/120/90" alt=""></td>
+          <td><strong>Terra Showroom</strong><br><small style="color:var(--txt-dim)">/projeler/terra-showroom</small></td>
+          <td>Mimari Proje</td>
+          <td>Terra Seramik</td>
+          <td>2023</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" aria-label="Ege Market Zinciri seç"></td>
+          <td><img class="thumb" src="https://picsum.photos/seed/p-ege/120/90" alt=""></td>
+          <td><strong>Ege Market Zinciri</strong><br><small style="color:var(--txt-dim)">/projeler/ege-market-zinciri</small></td>
+          <td>Tabela</td>
+          <td>Ege Market</td>
+          <td>2023</td>
+          <td><span class="badge badge--ok">Yayında</span></td>
+          <td class="row-actions">
+            <a class="btn btn--sm" href="../proje-detay.html" target="_blank" rel="noopener">Gör</a>
+            <a class="btn btn--sm" href="proje-duzenle.html">Düzenle</a>
+            <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap">
+    <select style="padding:8px 12px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:14px">
+      <option>Toplu işlem seç</option><option>Yayına al</option><option>Taslağa çek</option><option>Sil</option>
+    </select>
+    <button class="btn btn--sm" data-demo-action="Toplu işlem">Uygula</button>
+    <div style="margin-left:auto;display:flex;gap:6px">
+      <button class="btn btn--sm" disabled>‹</button>
+      <button class="btn btn--sm btn--signal">1</button>
+      <button class="btn btn--sm">2</button>
+      <button class="btn btn--sm">›</button>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+</div>
+<div class="side-scrim" id="sideScrim"></div>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

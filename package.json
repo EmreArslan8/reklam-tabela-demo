@@ -1,0 +1,10 @@
+{
+  "name": "aks-reklam-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AKS Reklam & Mimari — kurumsal site + yönetim paneli arayüz demosu (statik HTML/CSS/JS)",
+  "scripts": {
+    "build": "node build/build.mjs",
+    "dev": "node build/build.mjs && npx --yes serve . -l 4173"
+  }
+}

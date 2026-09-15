@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hizmetler · Yönetim Paneli | AKS Reklam &amp; Mimari</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14161B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF4A17'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="side">
+  <a class="side__logo" href="dashboard.html">
+    <span class="side__mark">A</span>
+    <span>
+      <strong>AKS</strong>
+      <small>Yönetim Paneli</small>
+    </span>
+  </a>
+
+  <div class="side__group">
+    <h6>Genel</h6>
+    <ul>
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 13h7V4H4v9zm0 7h7v-5H4v5zm9 0h7v-9h-7v9zm0-16v5h7V4h-7z"/></svg>
+        Kontrol Paneli
+      </a></li>
+      <li><a href="mesajlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 5l9 7 9-7"/></svg>
+        Mesajlar<span class="pill">2</span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>İçerik</h6>
+    <ul>
+      <li><a href="projeler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3zM3 7V4h6v3"/></svg>
+        Projeler
+      </a></li>
+      <li><a href="hizmetler.html" class="is-active" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/></svg>
+        Hizmetler
+      </a></li>
+      <li><a href="blog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>
+        Blog
+      </a></li>
+      <li><a href="sayfalar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v4h4"/></svg>
+        Sayfalar
+      </a></li>
+      <li><a href="medya.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6"/></svg>
+        Medya
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>Yapılandırma</h6>
+    <ul>
+      <li><a href="seo.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M11 4a7 7 0 107 7 7 7 0 00-7-7zM20 20l-4.5-4.5"/></svg>
+        SEO
+      </a></li>
+      <li><a href="ayarlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zM3 12h3m12 0h3M12 3v3m0 12v3"/></svg>
+        Ayarlar
+      </a></li>
+    </ul>
+  </div>
+
+  <div class="side__foot">
+    <a href="../index.html" target="_blank" rel="noopener">↗ Siteyi görüntüle</a>
+    <a href="index.html">→ Çıkış yap</a>
+  </div>
+</aside>
+<div class="main">
+<header class="topbar">
+  <button class="side-toggle" id="sideToggle" aria-label="Menüyü aç/kapat"><span></span><span></span><span></span></button>
+  <h1>Hizmetler</h1>
+  <div class="topbar__right">
+    <div class="search"><input type="search" placeholder="Panelde ara…" aria-label="Panelde ara"></div>
+    <div class="user"><span class="avatar">MY</span><span class="user__txt"><strong>Murat Y.</strong><small>Yönetici</small></span></div>
+  </div>
+</header>
+<div class="page-bar"><button class="btn btn--signal" data-demo-action="Yeni hizmet">+ Yeni Hizmet</button>
+    <span style="margin-left:auto;color:var(--txt-dim);font-size:14px">6 hizmet · sürükleyerek sıralanabilir</span></div>
+<div class="content">
+
+<div class="grid grid--sidebar">
+  <section class="card">
+    <div class="card__head"><h2>Hizmet listesi</h2><a href="#" data-demo-action="Sıralama">Sıralamayı kaydet</a></div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th style="width:36px"></th><th style="width:76px">Görsel</th><th>Hizmet</th><th>URL</th><th>Durum</th><th style="text-align:right">İşlem</th></tr></thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/signage-01/120/90" alt=""></td>
+            <td><strong>Tabela Üretimi</strong><br><small style="color:var(--txt-dim)">Kutu harf, ışıklı tabela, totem ve cephe giydirme çözü…</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/tabela-uretimi</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/print-02/120/90" alt=""></td>
+            <td><strong>Dijital Baskı</strong><br><small style="color:var(--txt-dim)">Geniş format baskı, araç giydirme, branda ve vitrin fo…</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/dijital-baski</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/arch-03/120/90" alt=""></td>
+            <td><strong>Mimari Proje</strong><br><small style="color:var(--txt-dim)">Ticari mekân, mağaza ve ofis projelerinde konseptten u…</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/mimari-proje</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/interior-04/120/90" alt=""></td>
+            <td><strong>İç Mekân Tasarımı</strong><br><small style="color:var(--txt-dim)">Mağaza rafı, teşhir ünitesi ve özel mobilya üretimiyle…</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/ic-mekan-tasarimi</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/brand-05/120/90" alt=""></td>
+            <td><strong>Kurumsal Kimlik</strong><br><small style="color:var(--txt-dim)">Logo, kılavuz ve basılı malzemeyle markanın her noktad…</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/kurumsal-kimlik</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color:var(--txt-dim);cursor:grab" title="Sürükle">⠿</td>
+            <td><img class="thumb" src="https://picsum.photos/seed/install-06/120/90" alt=""></td>
+            <td><strong>Montaj &amp; Bakım</strong><br><small style="color:var(--txt-dim)">Sepetli araç ve yetkin ekiple montaj, periyodik bakım …</small></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler/montaj-bakim</small></td>
+            <td><span class="badge badge--draft">Gizli</span></td>
+            <td class="row-actions">
+              <a class="btn btn--sm" href="../hizmet-detay.html" target="_blank" rel="noopener">Gör</a>
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <form class="card" data-demo-form>
+    <div class="card__head"><h2>Hızlı düzenle: Tabela Üretimi</h2></div>
+    <div class="field" style="margin-bottom:16px">
+      <label for="hBaslik">Başlık</label>
+      <input id="hBaslik" type="text" value="Tabela Üretimi">
+    </div>
+    <div class="field" style="margin-bottom:16px">
+      <label for="hOzet">Kısa açıklama</label>
+      <textarea id="hOzet" style="min-height:90px">Kutu harf, ışıklı tabela, totem ve cephe giydirme çözümlerini kendi atölyemizde üretiyoruz.</textarea>
+    </div>
+    <div class="field" style="margin-bottom:16px">
+      <label for="hMadde">Kapsam maddeleri (her satıra bir madde)</label>
+      <textarea id="hMadde" style="min-height:120px">Işıklı kutu harf ve vega harf
+Totem ve yönlendirme tabelaları
+Cephe giydirme ve kompozit kaplama
+Işıklı/ışıksız pleksi tabela
+Neon ve LED neon uygulamaları</textarea>
+    </div>
+    <div class="field" style="margin-bottom:16px">
+      <label for="hIkon">İkon</label>
+      <select id="hIkon"><option>Tabela</option><option>Baskı</option><option>Mimari</option><option>Mobilya</option><option>Marka</option><option>Montaj</option></select>
+    </div>
+    <div class="switch" style="margin-bottom:18px">
+      <input id="hAna" type="checkbox" checked>
+      <label for="hAna" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Ana sayfada göster</label>
+    </div>
+    <button class="btn btn--signal" style="width:100%;justify-content:center" type="submit">Kaydet</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="side-scrim" id="sideScrim"></div>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

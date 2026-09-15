@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sayfalar · Yönetim Paneli | AKS Reklam &amp; Mimari</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14161B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF4A17'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="side">
+  <a class="side__logo" href="dashboard.html">
+    <span class="side__mark">A</span>
+    <span>
+      <strong>AKS</strong>
+      <small>Yönetim Paneli</small>
+    </span>
+  </a>
+
+  <div class="side__group">
+    <h6>Genel</h6>
+    <ul>
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 13h7V4H4v9zm0 7h7v-5H4v5zm9 0h7v-9h-7v9zm0-16v5h7V4h-7z"/></svg>
+        Kontrol Paneli
+      </a></li>
+      <li><a href="mesajlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 5l9 7 9-7"/></svg>
+        Mesajlar<span class="pill">2</span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>İçerik</h6>
+    <ul>
+      <li><a href="projeler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3zM3 7V4h6v3"/></svg>
+        Projeler
+      </a></li>
+      <li><a href="hizmetler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/></svg>
+        Hizmetler
+      </a></li>
+      <li><a href="blog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>
+        Blog
+      </a></li>
+      <li><a href="sayfalar.html" class="is-active" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v4h4"/></svg>
+        Sayfalar
+      </a></li>
+      <li><a href="medya.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6"/></svg>
+        Medya
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>Yapılandırma</h6>
+    <ul>
+      <li><a href="seo.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M11 4a7 7 0 107 7 7 7 0 00-7-7zM20 20l-4.5-4.5"/></svg>
+        SEO
+      </a></li>
+      <li><a href="ayarlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zM3 12h3m12 0h3M12 3v3m0 12v3"/></svg>
+        Ayarlar
+      </a></li>
+    </ul>
+  </div>
+
+  <div class="side__foot">
+    <a href="../index.html" target="_blank" rel="noopener">↗ Siteyi görüntüle</a>
+    <a href="index.html">→ Çıkış yap</a>
+  </div>
+</aside>
+<div class="main">
+<header class="topbar">
+  <button class="side-toggle" id="sideToggle" aria-label="Menüyü aç/kapat"><span></span><span></span><span></span></button>
+  <h1>Sayfalar</h1>
+  <div class="topbar__right">
+    <div class="search"><input type="search" placeholder="Panelde ara…" aria-label="Panelde ara"></div>
+    <div class="user"><span class="avatar">MY</span><span class="user__txt"><strong>Murat Y.</strong><small>Yönetici</small></span></div>
+  </div>
+</header>
+<div class="page-bar"><button class="btn btn--signal" data-demo-action="Yeni sayfa">+ Yeni Sayfa</button>
+    <span style="margin-left:auto;color:var(--txt-dim);font-size:14px">8 sayfa</span></div>
+<div class="content">
+
+<div class="grid grid--sidebar">
+  <section class="card">
+    <div class="card__head"><h2>Site sayfaları</h2></div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>Sayfa</th><th>Adres</th><th>Durum</th><th>Güncelleme</th><th style="text-align:right">İşlem</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Ana Sayfa</strong></td>
+            <td><small style="color:var(--txt-dim)">/index.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>14.09.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Kurumsal</strong></td>
+            <td><small style="color:var(--txt-dim)">/hakkimizda.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>08.09.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Hizmetler</strong></td>
+            <td><small style="color:var(--txt-dim)">/hizmetler.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>11.09.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Projeler</strong></td>
+            <td><small style="color:var(--txt-dim)">/projeler.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>14.09.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Blog</strong></td>
+            <td><small style="color:var(--txt-dim)">/blog.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>28.08.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>İletişim</strong></td>
+            <td><small style="color:var(--txt-dim)">/iletisim.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>02.09.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>KVKK Aydınlatma Metni</strong></td>
+            <td><small style="color:var(--txt-dim)">/kvkk.html</small></td>
+            <td><span class="badge badge--ok">Yayında</span></td>
+            <td>12.03.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Çerez Politikası</strong></td>
+            <td><small style="color:var(--txt-dim)">/cerez.html</small></td>
+            <td><span class="badge badge--draft">Taslak</span></td>
+            <td>12.03.2026</td>
+            <td class="row-actions">
+              <button class="btn btn--sm" data-demo-action="Düzenleme">Düzenle</button>
+              <button class="btn btn--sm btn--danger" data-demo-action="Silme">Sil</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <form class="card" data-demo-form>
+    <div class="card__head"><h2>Menü yönetimi</h2></div>
+    <p style="color:var(--txt-dim);font-size:14px;margin-top:0">Sıralamayı sürükleyerek değiştirin, menüden çıkarmak için işareti kaldırın.</p>
+    <ul style="display:grid;gap:8px;margin-bottom:18px">
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="Ana Sayfa menüde göster" style="accent-color:var(--signal)">
+        <span>Ana Sayfa</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/index.html</small>
+      </li>
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="Kurumsal menüde göster" style="accent-color:var(--signal)">
+        <span>Kurumsal</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/hakkimizda.html</small>
+      </li>
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="Hizmetler menüde göster" style="accent-color:var(--signal)">
+        <span>Hizmetler</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/hizmetler.html</small>
+      </li>
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="Projeler menüde göster" style="accent-color:var(--signal)">
+        <span>Projeler</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/projeler.html</small>
+      </li>
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="Blog menüde göster" style="accent-color:var(--signal)">
+        <span>Blog</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/blog.html</small>
+      </li>
+      <li style="display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+        <span style="color:var(--txt-dim);cursor:grab">⠿</span>
+        <input type="checkbox" checked aria-label="İletişim menüde göster" style="accent-color:var(--signal)">
+        <span>İletişim</span>
+        <small style="margin-left:auto;color:var(--txt-dim)">/iletisim.html</small>
+      </li>
+    </ul>
+    <button class="btn btn--signal" style="width:100%;justify-content:center" type="submit">Menüyü Kaydet</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<div class="side-scrim" id="sideScrim"></div>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

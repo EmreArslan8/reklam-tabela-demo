@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proje Düzenle · Yönetim Paneli | AKS Reklam &amp; Mimari</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14161B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF4A17'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+<aside class="side" id="side">
+  <a class="side__logo" href="dashboard.html">
+    <span class="side__mark">A</span>
+    <span>
+      <strong>AKS</strong>
+      <small>Yönetim Paneli</small>
+    </span>
+  </a>
+
+  <div class="side__group">
+    <h6>Genel</h6>
+    <ul>
+      <li><a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 13h7V4H4v9zm0 7h7v-5H4v5zm9 0h7v-9h-7v9zm0-16v5h7V4h-7z"/></svg>
+        Kontrol Paneli
+      </a></li>
+      <li><a href="mesajlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 5l9 7 9-7"/></svg>
+        Mesajlar<span class="pill">2</span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>İçerik</h6>
+    <ul>
+      <li><a href="projeler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3zM3 7V4h6v3"/></svg>
+        Projeler
+      </a></li>
+      <li><a href="hizmetler.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/></svg>
+        Hizmetler
+      </a></li>
+      <li><a href="blog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>
+        Blog
+      </a></li>
+      <li><a href="sayfalar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v4h4"/></svg>
+        Sayfalar
+      </a></li>
+      <li><a href="medya.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6"/></svg>
+        Medya
+      </a></li>
+    </ul>
+  </div>
+  <div class="side__group">
+    <h6>Yapılandırma</h6>
+    <ul>
+      <li><a href="seo.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M11 4a7 7 0 107 7 7 7 0 00-7-7zM20 20l-4.5-4.5"/></svg>
+        SEO
+      </a></li>
+      <li><a href="ayarlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8a4 4 0 104 4 4 4 0 00-4-4zM3 12h3m12 0h3M12 3v3m0 12v3"/></svg>
+        Ayarlar
+      </a></li>
+    </ul>
+  </div>
+
+  <div class="side__foot">
+    <a href="../index.html" target="_blank" rel="noopener">↗ Siteyi görüntüle</a>
+    <a href="index.html">→ Çıkış yap</a>
+  </div>
+</aside>
+<div class="main">
+<header class="topbar">
+  <button class="side-toggle" id="sideToggle" aria-label="Menüyü aç/kapat"><span></span><span></span><span></span></button>
+  <h1>Proje Düzenle</h1>
+  <div class="topbar__right">
+    <div class="search"><input type="search" placeholder="Panelde ara…" aria-label="Panelde ara"></div>
+    <div class="user"><span class="avatar">MY</span><span class="user__txt"><strong>Murat Y.</strong><small>Yönetici</small></span></div>
+  </div>
+</header>
+<div class="page-bar"><a class="btn" href="projeler.html">← Listeye dön</a>
+    <a class="btn" href="../proje-detay.html" target="_blank" rel="noopener">Önizle</a>
+    <span style="margin-left:auto;display:flex;gap:10px">
+      <button class="btn" form="projForm" type="submit">Taslak Kaydet</button>
+      <button class="btn btn--signal" form="projForm" type="submit">Kaydet & Yayınla</button>
+    </span></div>
+<div class="content">
+
+<form id="projForm" data-demo-form>
+  <div class="grid grid--sidebar">
+    <div style="display:grid;gap:20px">
+
+      <section class="card">
+        <div class="card__head"><h2>Proje bilgileri</h2></div>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="baslik">Proje Başlığı</label>
+            <input id="baslik" type="text" value="Lumen AVM Totem">
+          </div>
+          <div class="field field--full">
+            <label for="slug">URL (slug)</label>
+            <input id="slug" type="text" value="lumen-avm-totem">
+            <small>Adres: aksreklam.com.tr/projeler/lumen-avm-totem</small>
+          </div>
+          <div class="field">
+            <label for="isveren">İşveren</label>
+            <input id="isveren" type="text" value="Lumen Gayrimenkul">
+          </div>
+          <div class="field">
+            <label for="konum">Konum</label>
+            <input id="konum" type="text" value="Ataşehir, İstanbul">
+          </div>
+          <div class="field">
+            <label for="olcek">Ölçek</label>
+            <input id="olcek" type="text" value="12 m yükseklik">
+          </div>
+          <div class="field">
+            <label for="sure">Süre</label>
+            <input id="sure" type="text" value="6 hafta">
+          </div>
+          <div class="field field--full">
+            <label for="ozet">Kısa Özet</label>
+            <textarea id="ozet" style="min-height:90px">Otoyol cephesinden okunması gereken 12 metrelik çift yüzlü totem. Alüminyum karkas üzerine kompozit kaplama, iç aydınlatma LED modül.</textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__head">
+          <h2>Proje metni</h2>
+          <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-dim)">Zengin metin editörü</span>
+        </div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;border:1px solid var(--line);border-bottom:0;padding:8px;background:var(--paper);border-radius:4px 4px 0 0">
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">B</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">I</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">U</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">H2</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">H3</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">• Liste</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">1. Liste</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">🔗 Bağlantı</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">🖼 Görsel</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">↶</button>
+          <button type="button" class="btn btn--sm" data-demo-action="Editör">↷</button>
+        </div>
+        <textarea style="min-height:230px;border-radius:0 0 4px 4px;width:100%;padding:14px;border:1px solid var(--line);font:inherit">İşveren, otoyoldan gelen araç trafiğinin AVM girişini geç fark ettiğini belirtti. İhtiyaç, 250 metre mesafeden okunabilen ve gece de aynı netlikte görünen bir yönlendirme elemanıydı.
+
+Cephe ve zemin etüdü sonrası 12 metrelik çift yüzlü totem tasarlandı. Alüminyum karkas statik hesabı yapıldı, rüzgâr yüküne göre temel ölçüsü belirlendi.</textarea>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2>Galeri görselleri</h2><a href="medya.html">Medya kütüphanesi</a></div>
+        <div class="media-grid" style="margin-bottom:16px">
+          <figure class="media" style="margin:0">
+            <img src="https://picsum.photos/seed/p-lumen-g1/400/300" alt="">
+            <figcaption>gorsel-1.jpg · 480 KB <button type="button" class="btn btn--sm btn--danger" style="float:right;margin-top:-4px" data-demo-action="Görsel silme">×</button></figcaption>
+          </figure>
+          <figure class="media" style="margin:0">
+            <img src="https://picsum.photos/seed/p-lumen-g2/400/300" alt="">
+            <figcaption>gorsel-2.jpg · 480 KB <button type="button" class="btn btn--sm btn--danger" style="float:right;margin-top:-4px" data-demo-action="Görsel silme">×</button></figcaption>
+          </figure>
+          <figure class="media" style="margin:0">
+            <img src="https://picsum.photos/seed/p-lumen-g3/400/300" alt="">
+            <figcaption>gorsel-3.jpg · 480 KB <button type="button" class="btn btn--sm btn--danger" style="float:right;margin-top:-4px" data-demo-action="Görsel silme">×</button></figcaption>
+          </figure>
+          <figure class="media" style="margin:0">
+            <img src="https://picsum.photos/seed/p-lumen-g4/400/300" alt="">
+            <figcaption>gorsel-4.jpg · 480 KB <button type="button" class="btn btn--sm btn--danger" style="float:right;margin-top:-4px" data-demo-action="Görsel silme">×</button></figcaption>
+          </figure>
+          <figure class="media" style="margin:0">
+            <img src="https://picsum.photos/seed/p-lumen-g5/400/300" alt="">
+            <figcaption>gorsel-5.jpg · 480 KB <button type="button" class="btn btn--sm btn--danger" style="float:right;margin-top:-4px" data-demo-action="Görsel silme">×</button></figcaption>
+          </figure>
+        </div>
+        <div class="dropzone" data-demo-action="Görsel yükleme">
+          <strong>Görselleri buraya sürükleyin</strong>
+          JPG, PNG veya WebP · tek dosya en fazla 5 MB
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2>SEO ayarları</h2></div>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="seoTitle">Sayfa Başlığı (title)</label>
+            <input id="seoTitle" type="text" data-counter="#seoTitleCount" data-max="60" value="Lumen AVM Totem | AKS Reklam & Mimari">
+            <small id="seoTitleCount"></small>
+          </div>
+          <div class="field field--full">
+            <label for="seoDesc">Açıklama (meta description)</label>
+            <textarea id="seoDesc" style="min-height:80px" data-counter="#seoDescCount" data-max="160">Otoyol cephesinden okunması gereken 12 metrelik çift yüzlü totem. Alüminyum karkas üzerine kompozit kaplama, iç aydınlatma LED modül.</textarea>
+            <small id="seoDescCount"></small>
+          </div>
+          <div class="field field--full">
+            <label for="seoKw">Anahtar kelimeler</label>
+            <input id="seoKw" type="text" value="totem tabela, avm totem, ışıklı totem, istanbul tabela">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div style="display:grid;gap:20px">
+      <section class="card">
+        <div class="card__head"><h2>Yayın</h2></div>
+        <div class="field" style="margin-bottom:14px">
+          <label for="durum">Durum</label>
+          <select id="durum"><option>Yayında</option><option>Taslak</option><option>Arşiv</option></select>
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label for="tarih">Yayın Tarihi</label>
+          <input id="tarih" type="date" value="2026-09-02">
+        </div>
+        <div class="switch"><input id="oneCikan" type="checkbox" checked><label for="oneCikan" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Ana sayfada öne çıkar</label></div>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2>Kategori</h2></div>
+        <div style="display:grid;gap:10px">
+          <div class="switch">
+            <input id="cat-tabela" type="radio" name="cat" checked>
+            <label for="cat-tabela" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Tabela</label>
+          </div>
+          <div class="switch">
+            <input id="cat-magaza" type="radio" name="cat">
+            <label for="cat-magaza" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Mağaza</label>
+          </div>
+          <div class="switch">
+            <input id="cat-mimari" type="radio" name="cat">
+            <label for="cat-mimari" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Mimari Proje</label>
+          </div>
+          <div class="switch">
+            <input id="cat-arac" type="radio" name="cat">
+            <label for="cat-arac" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Araç Giydirme</label>
+          </div>
+          <div class="switch">
+            <input id="cat-fuar" type="radio" name="cat">
+            <label for="cat-fuar" style="font-family:var(--font-body);letter-spacing:0;text-transform:none;color:var(--txt)">Fuar &amp; Stand</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2>Kapak görseli</h2></div>
+        <img src="https://picsum.photos/seed/p-lumen/600/400" alt="" style="border-radius:4px;margin-bottom:12px">
+        <button type="button" class="btn" style="width:100%;justify-content:center" data-demo-action="Kapak değiştirme">Görseli Değiştir</button>
+      </section>
+
+      <section class="card">
+        <div class="card__head"><h2>Kayıt bilgisi</h2></div>
+        <ul style="font-size:14px;color:var(--txt-dim);display:grid;gap:8px">
+          <li>Oluşturan: Murat Y.</li>
+          <li>Oluşturma: 02.09.2026 10:14</li>
+          <li>Son düzenleme: 14.09.2026 16:02</li>
+          <li>Görüntülenme: 1.248</li>
+        </ul>
+        <button type="button" class="btn btn--danger" style="width:100%;justify-content:center;margin-top:16px" data-demo-action="Silme">Projeyi Sil</button>
+      </section>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+<div class="side-scrim" id="sideScrim"></div>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
